@@ -344,25 +344,27 @@ li.dropdown {
 
 /* Sale section */
 #sale {
-    background-image: url(./img/bg-footer8\ \(1\).jpg);
+    background-image: url('./img/bg-footer8\ \(1\).jpg');
     background-size: cover;
-    height: 100vh;
+    height: 400px;
     width: 100%;
+}
+#sale .sale {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #sale h1 {
     color: white;
     font-size: 35px;
     font-family: "Roboto Slab", sans-serif;
-    margin: auto;
-    margin-top: 120px;
     text-align: center;
 }
 #sale p {
     color: white;
     font-size: 15px;
-    margin: auto;
     text-align: center;
-    
 }
 /* End Sale section */
 /*Footer */
