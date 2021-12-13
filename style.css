@@ -367,22 +367,6 @@ li.dropdown {
   text-align: center;
   padding-bottom: 30px;
 }
-.slide-wrapper {
-  width: 100%;
--webkit-animation: slide 4s ease infinite;
-}
-.slide {
-  float: left;
-  height: 100vh;
-  width: 400px;
-}
-@-webkit-keyframes slide {
-  25% {margin-left: 0px;}
-  25% {margin-left: -400px;}
-  25% {margin-left: -400px;}
-  25% {margin-left: -800px;}
-  25% {margin-left: -800px;}
-}
 /* End Discount section */
 /* Sale section */
 #sale {
@@ -449,20 +433,22 @@ li.dropdown {
 }
 #footer .footer-items {
   display: grid;
-  grid-template-columns: 200px 250px 250px 250px 250px;
+  grid-template-columns: 300px  300px 300px 300px;
   grid-gap: 10px;
   width: 1200px;
   padding: 10px;
 }
-#footer .footer-items .brand {
-  flex-basis: 100%;
+#footer .footer-items .brand-img {
   height: 50px;
   width: 150px;
   overflow: hidden;
   position: relative;
+  bottom: 20px;
 }
-#footer .footer-items .footer-info {
-  width: 150px;
+#footer .footer-items .info p {
+  font-size: 1.3rem;
+  color: black;
+  padding: 5px;
 }
 #footer .footer-item h1 {
   font-size: 2rem;
@@ -480,13 +466,20 @@ li.dropdown {
 #footer .footer-item li a {
   color: black;
 }
-#footer .footer-info h2 {
-  font-size: 1.3rem;
-  line-height: 2rem;
-  font-weight: 500;
-  padding: 3px;
+/* End Footer */
+
+/* Copy */
+#copy .copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+  height: 100px;
 }
-/*End Footer */
+#copy .copy-name {
+  font-size: 9px;
+}
+/* End Copy */
 /* Keyframes */
 @keyframes hamburger_puls {
     0% {
