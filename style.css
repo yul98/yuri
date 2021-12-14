@@ -348,7 +348,6 @@ li.dropdown {
   background-size: cover;
   height: 400px;
   width: 100%;
-  position: relative;
   z-index: 1;
 }
 #discount h1 {
@@ -368,10 +367,11 @@ li.dropdown {
   display: grid;
   grid-template-columns: 300px 300px 300px 300px;
   gap: 20px;
-  position: absolute;
   z-index: 2;
   height: 100px;
   width: 100%;
+  margin-top: -70px;
+  padding: 20px;
 }
 /* End Discount section */
 
@@ -381,7 +381,7 @@ li.dropdown {
     background-size: cover;
     height: 400px;
     width: 100%;
-    position: relative;
+    margin-top: 300px;
 }
 #sale .sale {
     height: 100%;
@@ -439,6 +439,11 @@ li.dropdown {
   max-width: 1200px;
   margin: 0 auto;
   min-height: 45vh;
+}
+#footer .layout {
+  display: block;
+  height: auto;
+  padding-top: 40px;
 }
 #footer .footer-items {
   display: grid;
