@@ -33,7 +33,7 @@ a {
 }
 .cta:hover {
   color: green;
-  background-color: white;
+  background-color: red;
 }
 img {
   height: 100%;
