@@ -149,7 +149,7 @@ li.dropdown {
   margin-right: 20px;
 }
 #header .hamburger .bar:hover {
-  background: red;
+  background: white;
 }
 #header .hamburger .bar {
   height: 2px;
@@ -334,7 +334,6 @@ li.dropdown {
 }
 /* End Feature section */
 
-
 /* Discount section */
 #discount .discount {
   background-image: url('./img/b4.jpg');
@@ -344,10 +343,10 @@ li.dropdown {
   z-index: 1;
 }
 #discount h1 {
-    color: black;
-    font-size: 35px;
-    text-align: center;
-    padding-top: 50px;
+  color: black;
+  font-size: 35px;
+  text-align: center;
+  padding-top: 50px;
 }
 #discount p {
   color: black;
@@ -377,24 +376,24 @@ li.dropdown {
     margin-top: 400px;
 }
 #sale .sale {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #sale h1 {
-    color: white;
-    font-size: 35px;
-    font-family: "Roboto Slab", sans-serif;
-    text-align: center;
-    padding-top: 100px;
-    padding-bottom: 50px;
+  color: white;
+  font-size: 35px;
+  font-family: 'Roboto Slab', sans-serif;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 #sale p {
-    color: white;
-    font-size: 15px;
-    text-align: center;
-    padding-bottom: 30px;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  padding-bottom: 30px;
 }
 #sale input[type='text'] {
   border: 0.7px solid gray;
@@ -424,8 +423,8 @@ li.dropdown {
   justify-content: center;
   align-items: center;
 }
-
 /* End Sale section */
+
 /*Footer */
 #footer .footer {
   flex-direction: column;
@@ -440,7 +439,7 @@ li.dropdown {
 }
 #footer .footer-items {
   display: grid;
-  grid-template-columns: 300px  300px 300px 300px;
+  grid-template-columns: 300px 300px 300px 300px;
   grid-gap: 10px;
   width: 1200px;
   padding: 10px;
@@ -511,25 +510,25 @@ li.dropdown {
 
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
-    /* Header */
-    #header .hamburger {
-        display: none;
-    }
-    #header .nav-list ul {
-        position: inititial;
-        display: block;
-        height: auto;
-        width: fit-content;
-        background-color: transparent;
-    }
-    #header .nav-list ul li {
-        display: inline-block;
-    }
-    #header .nav-list ul li a {
-        font-size: 1.6rem;
-    }
-    header .nav-list ul a:after {
-        display: none;
-    }
-    /* End Header */
+  /* Header */
+  #header .hamburger {
+    display: none;
+  }
+  #header .nav-list ul {
+    position: inititial;
+    display: block;
+    height: auto;
+    width: fit-content;
+    background-color: transparent;
+  }
+  #header .nav-list ul li {
+    display: inline-block;
+  }
+  #header .nav-list ul li a {
+    font-size: 1.6rem;
+  }
+  header .nav-list ul a:after {
+    display: none;
+  }
+  /* End Header */
 }
