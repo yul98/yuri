@@ -149,7 +149,7 @@ li.dropdown {
   margin-right: 20px;
 }
 #header .hamburger .bar:hover {
-  background: white;
+  background: green;
 }
 #header .hamburger .bar {
   height: 2px;
@@ -166,7 +166,7 @@ li.dropdown {
   width: 100%;
   background-color: black;
 }
-#header .hamburger .bar:after:hover,
+#header .hamburger .bar:after,
 #header .hamburger .bar:before:hover {
   background-color: green;
 }
