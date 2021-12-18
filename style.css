@@ -137,58 +137,48 @@ li.dropdown {
   color: green;
 }
 .camnm {
-  width: 50px;
+  width: 30px;
+  cursor: pointer;
 }
 .camnm:hover {
   filter: invert(21%) sepia(100%) saturate(3316%) hue-rotate(101deg)
     brightness(95%) contrast(105%);
 }
-#header .hamburger {
-  height: 50px;
-  width: 50px;
-  display: inline-block;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 100;
-  cursor: pointer;
-  margin-right: 20px;
-}
-#header .hamburger .bar:hover {
-  background: green;
-}
-#header .hamburger .bar {
-  height: 2px;
-  width: 30px;
-  position: relative;
-  background: black;
-  z-index: -1;
-}
-#header .hamburger .bar:after,
-#header .hamburger .bar:before {
-  content: '';
-  position: absolute;
+.overlay {
   height: 100%;
-  width: 100%;
-  background-color: black;
-}
-#header .hamburger .bar:after,
-#header .hamburger .bar:before:hover {
-  background-color: green;
-}
-#header .hamburger .bar:after {
-  top: 8px;
-}
-#header .hamburger .bar:before {
-  bottom: 8px;
-}
-#header .hamburger.active .bar:before {
-  bottom: 0;
-}
-#header .hamburger.active .bar:after {
+  width: 0;
+  position: fixed;
+  z-index: 1;
   top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
 }
+
+.overlay-content {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: auto;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
 /* End Header setion */
 /* Hero Section */
 #hero {
@@ -518,7 +508,7 @@ li.dropdown {
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
   /* Header */
-  #header .hamburger {
+  #header .camnm {
     display: none;
   }
   #header .nav-list ul {
@@ -536,6 +526,12 @@ li.dropdown {
   }
   header .nav-list ul a:after {
     display: none;
+  }
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
   }
   /* End Header */
 }

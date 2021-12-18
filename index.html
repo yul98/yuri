@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="myscripts.js/"></script>
     <title>Cleverfood</title>
 </head>
 <body>
@@ -15,26 +16,29 @@
                     <a href="#hero">Cleverfood</a>
                 </div>
                 <div class="nav-list">
-                    <div class="hamburger">
-                        <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div id="myNav" class="overlay">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <img class="camnm" src="/svg/bars-solid.svg" alt="">
+                        <div class="overlay-content">
+                        <ul>
+                            <li class="active"><a href="#hero">Trang chủ</a></li>
+                            <li><a href="#product">Giới thiệu</a></li>
+                            <li class="dropdown">
+                                <a class="dropbtn">Cửa hàng</a>
+                                <div class="dropdown-content">
+                                    <a href="#">Rau củ</a>
+                                    <a href="#">Trái cây</a>
+                                    <a href="#">Đồ uống</a>
+                                    <a href="#">Đồ khô</a>
+                                </div>
+                            </li>
+                            <li><a href="#kienthuc">Kiến thức</a></li>
+                            <li><a href="#lienhe">Liên hệ</a></li>
+                        </div>
+                        </ul>
                     </div>
-                    <img class="camnm" src="/svg/bars-solid.svg" alt="">
-                    <ul>
-                        <li class="active"><a href="#hero">Trang chủ</a></li>
-                        <li><a href="#product">Giới thiệu</a></li>
-                        <li class="dropdown">
-                            <a class="dropbtn">Cửa hàng</a>
-                            <div class="dropdown-content">
-                                <a href="#">Rau củ</a>
-                                <a href="#">Trái cây</a>
-                                <a href="#">Đồ uống</a>
-                                <a href="#">Đồ khô</a>
-                            </div>
-                        </li>
-                        <li><a href="#kienthuc">Kiến thức</a></li>
-                        <li><a href="#lienhe">Liên hệ</a></li>
-                    </ul>
-                </div>
+                    </div>
                 <input type="text" placeholder="Tìm kiếm"/>
             </div>
         </div>
