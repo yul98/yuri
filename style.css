@@ -136,6 +136,13 @@ li.dropdown {
 .nav-list a.active {
   color: green;
 }
+.camnm {
+  width: 50px;
+}
+.camnm:hover {
+  filter: invert(21%) sepia(100%) saturate(3316%) hue-rotate(101deg)
+    brightness(95%) contrast(105%);
+}
 #header .hamburger {
   height: 50px;
   width: 50px;
@@ -369,11 +376,11 @@ li.dropdown {
 
 /* Sale section */
 #sale {
-    background-image: url('./img/bg-footer8\ \(1\).jpg');
-    background-size: cover;
-    height: 400px;
-    width: 100%;
-    margin-top: 400px;
+  background-image: url('./img/bg-footer8\ \(1\).jpg');
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  margin-top: 400px;
 }
 #sale .sale {
   height: 100%;
