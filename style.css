@@ -527,7 +527,9 @@ li.dropdown {
   header .nav-list ul a:after {
     display: none;
   }
-  .overlay a {font-size: 20px}
+  .overlay a {
+    font-size: 20px;
+  }
   .overlay .closebtn {
     font-size: 40px;
     top: 15px;
